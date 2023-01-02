@@ -6,11 +6,11 @@ module HammerCLIForemanGoogle
     class LocaleDomain < HammerCLI::I18n::LocaleDomain
 
       def translated_files
-        Dir.glob(File.join(File.dirname(__FILE__), '../**/*.rb'))
+        Dir.glob(File.join(__dir__, '../**/*.rb'))
       end
 
       def locale_dir
-        File.join(File.dirname(__FILE__), '../../locale')
+        File.join(__dir__, '../../locale')
       end
 
       def domain_name
