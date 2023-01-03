@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[foreman.hammer-cli-foreman-google]
+file_filter = locale/<lang>/hammer-cli-foreman-google.edit.po
+source_file = locale/hammer-cli-foreman-google.pot
+source_lang = en
+type = PO
