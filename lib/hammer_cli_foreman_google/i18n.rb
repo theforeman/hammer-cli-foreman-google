@@ -14,7 +14,7 @@ module HammerCLIForemanGoogle
       end
 
       def domain_name
-        'hammer-cli-foreman-google'
+        'hammer_cli_foreman_google'
       end
     end
 
