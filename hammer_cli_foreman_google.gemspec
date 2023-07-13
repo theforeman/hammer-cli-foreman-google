@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Foreman Google plugin for Hammer CLI'
 
-  spec.files         = Dir['{lib,config}/**/*', 'LICENSE', 'README*']
+  spec.files         = Dir['{lib,config}/**/*', 'LICENSE', 'README*'] + Dir["locale/**/*.{po,pot,mo}"]
   spec.require_paths = ['lib']
   spec.test_files    = Dir['{test}/**/*']
 
