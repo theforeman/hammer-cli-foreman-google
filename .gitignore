@@ -4,6 +4,7 @@ Gemfile.local
 Gemfile.local.rb
 pkg
 .bundle
+*.gem
 
 # RubyMine
 .idea
