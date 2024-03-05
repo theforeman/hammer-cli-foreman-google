@@ -9,14 +9,16 @@ HammerCLI::I18n::FindTask.define(HammerCLIForemanGoogle::I18n::LocaleDomain.new,
 
 Bundler::GemHelper.install_tasks
 
-Rake::TestTask.new do |t|
-  t.libs << 'test'
-  t.libs << 'lib'
-  t.test_files = FileList['test/**/*_test.rb']
-  t.verbose = true
-end
-
 namespace :pkg do
   desc 'Generate package source gem'
   task generate_source: :build
+end
+
+begin
+  require 'rubocop/rake_task'
+rescue LoadError
+  # RuboCop is optional
+else
+  RuboCop::RakeTask.new
+  task default: [:rubocop]
 end

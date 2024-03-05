@@ -2,9 +2,7 @@ require 'hammer_cli/i18n'
 
 module HammerCLIForemanGoogle
   module I18n
-
     class LocaleDomain < HammerCLI::I18n::LocaleDomain
-
       def translated_files
         Dir.glob(File.join(__dir__, '../**/*.rb'))
       end
@@ -19,13 +17,10 @@ module HammerCLIForemanGoogle
     end
 
     class SystemLocaleDomain < LocaleDomain
-
       def locale_dir
         '/usr/share/locale'
       end
-
     end
-
   end
 end
 

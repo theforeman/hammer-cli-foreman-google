@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'hammer_cli_foreman/compute_resource/base'
 
 module HammerCLIForemanGoogle
