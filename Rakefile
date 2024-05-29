@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rake/testtask'
 require 'bundler/gem_tasks'
 
-require "hammer_cli_foreman_google/version"
-require "hammer_cli_foreman_google/i18n"
-require "hammer_cli/i18n/find_task"
+require 'hammer_cli_foreman_google/version'
+require 'hammer_cli_foreman_google/i18n'
+require 'hammer_cli/i18n/find_task'
 
 HammerCLI::I18n::FindTask.define(HammerCLIForemanGoogle::I18n::LocaleDomain.new, HammerCLIForemanGoogle.version)
 

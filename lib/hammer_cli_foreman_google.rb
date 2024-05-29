@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanGoogle
   require 'hammer_cli_foreman/compute_resource/register_compute_resources'
 
