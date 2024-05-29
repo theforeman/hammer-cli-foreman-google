@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'hammer_cli/i18n'
 
 module HammerCLIForemanGoogle
@@ -24,5 +26,6 @@ module HammerCLIForemanGoogle
   end
 end
 
-domain = [HammerCLIForemanGoogle::I18n::LocaleDomain.new, HammerCLIForemanGoogle::I18n::SystemLocaleDomain.new].find { |d| d.available? }
+domain = [HammerCLIForemanGoogle::I18n::LocaleDomain.new,
+          HammerCLIForemanGoogle::I18n::SystemLocaleDomain.new].find(&:available?)
 HammerCLI::I18n.add_domain(domain) if domain
