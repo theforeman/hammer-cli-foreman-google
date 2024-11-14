@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors     = ['The Foreman Team']
   spec.email       = ['dev@community.theforeman.org']
   spec.homepage      = 'https://github.com/theforeman/hammer-cli-foreman-google'
-  spec.license       = 'GPL-3.0'
+  spec.license       = 'GPL-3.0-only'
 
   spec.platform      = Gem::Platform::RUBY
 
