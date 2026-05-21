@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
   spec.files         = Dir['{lib,config,locale}/**/*', 'LICENSE', 'README*']
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'hammer_cli_foreman', '~> 5.0'
+  spec.add_dependency 'hammer_cli_foreman', '>= 3.10', '< 6.0'
   spec.required_ruby_version = '>= 2.7', '< 4'
 end
