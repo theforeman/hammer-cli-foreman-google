@@ -26,6 +26,7 @@ module HammerCLIForemanGoogle
       def provider_specific_fields
         [
           Fields::Field.new(label: _('Key Path'), path: [:key_path]),
+          Fields::Field.new(label: _('Key Content'), path: [:key_content]),
           Fields::Field.new(label: _('Zone'), path: [:zone]),
         ]
       end
@@ -40,7 +41,7 @@ module HammerCLIForemanGoogle
       end
 
       def mandatory_resource_options
-        super + %i[key_path zone]
+        super + %i[zone]
       end
     end
   end
