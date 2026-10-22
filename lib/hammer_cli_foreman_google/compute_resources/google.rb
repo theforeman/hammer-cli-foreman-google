@@ -25,6 +25,7 @@ module HammerCLIForemanGoogle
 
       def provider_specific_fields
         [
+          Fields::Field.new(label: _('Key Content'), path: [:key_content]),
           Fields::Field.new(label: _('Zone'), path: [:zone]),
         ]
       end
